@@ -1,22 +1,23 @@
 
+// function to display value in input field//////////////
 
 function display(value) {
 
     let display = document.getElementById('display').value+=value;
 }
 
-function clearDisplay() {
-    document.getElementById('display').value='';
-}
+// function to calculate the result...........
 
 function calculateResult() {
-    // try {
-    //     display.value = eval(display.value);
-    // } catch (error) {
-    //     display.value = 'Error';
-    // }  
+   
     var value=document.getElementById('display').value;
     var answer= eval(value);
     document.getElementById('display').value=answer;
     
+}
+
+// function to clear values from input field.......
+
+function clearDisplay() {
+    document.getElementById('display').value='';
 }
